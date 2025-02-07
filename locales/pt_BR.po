@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: GLPI Plugin - Transfer Ticket Entity\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-24 09:03+0000\n"
-"PO-Revision-Date: 2024-02-22 15:22-0300\n"
-"Last-Translator: Yannick Comba, 2022,2023\n"
-"Language-Team: Portuguese (Brasil)\n"
+"PO-Revision-Date: 2024-12-12 13:58-0300\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese (Portugal)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: inc/profile.class.php:74 inc/ticket.class.php:48
 msgid "Transfer Ticket Entity"
@@ -30,8 +30,8 @@ msgid "Change rights"
 msgstr "Mudar permissões"
 
 #: inc/profile.class.php:77
-msgid "Using entity transfer"
-msgstr "Usando transferência de entidade"
+msgid "Authorized entity transfer"
+msgstr "Transferência de entidade autorizada"
 
 #: inc/profile.class.php:89
 msgid "Save"
@@ -46,12 +46,15 @@ msgid "Error, please reload the page."
 msgstr "Erro, por favor atualizar a página."
 
 #: inc/ticket.class.php:211
-msgid "If the problem persists, you can try to empty the cache by doing CTRL + F5."
-msgstr "Se o problema persistir, você pode tentar esvaziar o cache através das teclas CTRL + F5."
+msgid ""
+"If the problem persists, you can try to empty the cache by doing CTRL + F5."
+msgstr ""
+"Se o problema persistir, você pode tentar esvaziar o cache através das "
+"teclas CTRL + F5."
 
 #: inc/ticket.class.php:216
 msgid "Select ticket entity to transfer"
-msgstr "Select ticket entity to transfer"
+msgstr "Selecione a entidade do tíquete a ser transferida"
 
 #: inc/ticket.class.php:218
 msgid "Choose your entity"
@@ -70,8 +73,12 @@ msgid "Confirm transfer ?"
 msgstr "Conformar transferência?"
 
 #: inc/ticket.class.php:251
-msgid "Once the transfer has been completed, the ticket will remain visible only if you have the required rights."
-msgstr "Uma vez que a transferência tiver sido completa, o ticket será visível somente se você tiver as permissões corretas."
+msgid ""
+"Once the transfer has been completed, the ticket will remain visible only if "
+"you have the required rights."
+msgstr ""
+"Uma vez que a transferência tiver sido completa, o ticket será visível "
+"somente se você tiver as permissões corretas."
 
 #: inc/ticket.class.php:252
 msgid "Cancel"
@@ -81,27 +88,27 @@ msgstr "Cancelar"
 msgid "Confirm"
 msgstr "Confirmar"
 
-#: inc/ticket.php:125
+#: front/ticket.form.php:125
 msgid "Please select a valid entity"
 msgstr "Por favor selecione uma entidade válida"
 
-#: inc/ticket.php:135
+#: front/ticket.form.php:135
 msgid "Please select a valid group"
 msgstr "Por favor selecione um grupo válido"
 
-#: inc/ticket.php:181
+#: front/ticket.form.php:181
 msgid "Escalation to"
 msgstr "Escalação para"
 
-#: inc/ticket.php:181
+#: front/ticket.form.php:181
 msgid "in the group"
 msgstr "no grupo"
 
-#: inc/ticket.php:185
+#: front/ticket.form.php:185
 msgid "Successful transfer for ticket n° : "
 msgstr "Transferência feita com sucesso para o ticket n° : "
 
-#: inc/ticket.php:197
+#: front/ticket.form.php:197
 msgid "Transfer canceled"
 msgstr "Transferência cancelada"
 
@@ -109,10 +116,72 @@ msgstr "Transferência cancelada"
 msgid "Unauthorized transfer on closed ticket."
 msgstr "Não é possível transferir um ticket cujo status é fechado."
 
-#: inc/ticket.class.php:436 inc/ticket.php:357
+#: inc/ticket.class.php:436 front/ticket.form.php:357
 msgid "Please explain your transfer"
 msgstr "Por favor apresentar mais dados sobre sua transferência"
 
-#: inc/ticket.php:266
+#: front/ticket.form.php:266
 msgid "You must be assigned to the ticket to be able to transfer it"
 msgstr "Você precisa estar atribuído ao ticket para ser capaz de transferi-lo"
+
+#: inc/ticket.class.php:239
+msgid "No entity available found, transfer impossible."
+msgstr "Nenhuma entidade encontrada, transferência impossível."
+
+#: inc/ticket.class.php:305
+msgid "None"
+msgstr "Nenhuma"
+
+#: inc/entity.class.php:118
+msgid "Settings Transfer Ticket Entity"
+msgstr "Configurações de Transferência de Ticket para Entidade"
+
+#: inc/entity.class.php:123
+msgid "Assigned group required"
+msgstr "Grupo atribuído obrigatório"
+
+#: inc/entity.class.php:130
+msgid "Justification required"
+msgstr "Justificativa obrigatória"
+
+#: inc/entity.class.php:137
+msgid "Allow Transfer function"
+msgstr "Permitir função de Transferência"
+
+#: inc/ticket.class.php:322
+msgid "No previous entity"
+msgstr "Sem entidade anterior"
+
+#: inc/ticket.class.php:342
+msgid ""
+"No group found with « Assigned to » right while a group is required. "
+"Transfer impossible."
+msgstr ""
+"Nenhum grupo encontrado com permissão de \"Atribuído a\" enquanto um grupo é "
+"obrigatório. Transferência impossível."
+
+#: inc/profile.class.php:45
+msgid "Active"
+msgstr "Ativo"
+
+#: inc/profile.class.php:47
+msgid ""
+"Transfer authorized without assignment of technician or associated group"
+msgstr "Transferência autorizada sem atribuição de técnico ou grupo associado"
+
+#: inc/entity.class.php:153
+msgid "Keep category after transfer"
+msgstr "Manter categoria após transferência"
+
+#: inc/ticket.class.php:448
+msgid ""
+"Warning, category will be reset if it does not exist in the target entity."
+msgstr ""
+"Aviso: a categoria será redefinida se não existir na entidade de destino."
+
+#: inc/ticket.class.php:303
+msgid ""
+"You don't have right to update tickets. Please contact your administrator."
+msgstr ""
+"Você não tem permissão para atualizar tickets. Por favor, entre em contato "
+"com o administrador."
